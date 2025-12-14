@@ -1,0 +1,50 @@
+- type: constructionGraph
+  id: ADTBaseBarrel
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: adtbasebarrel
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+        
+    - node: adtbasebarrel
+      entity: ADTBaseBarrel
+            
+- type: constructionGraph
+  id: ADTBarrelPlanks
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: adtbarrelplanks
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+        
+    - node: adtbarrelplanks
+      entity: ADTBarrelPlanks
+      
+- type: constructionGraph
+  id: ADTBarrelFire
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: adtbarrelfire
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+        
+    - node: adtbarrelfire
+      entity: ADTBarrelFire

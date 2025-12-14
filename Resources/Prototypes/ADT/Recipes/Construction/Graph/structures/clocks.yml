@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: ADTWallClock
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: adtwallclock
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 2
+        
+    - node: adtwallclock
+      entity: ADTWallClock

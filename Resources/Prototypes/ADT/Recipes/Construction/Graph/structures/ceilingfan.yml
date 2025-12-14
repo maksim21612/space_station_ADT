@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: ADTCeilingFan
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: adtceilingfan
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+        
+    - node: adtceilingfan
+      entity: ADTCeilingFan

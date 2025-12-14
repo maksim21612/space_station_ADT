@@ -30,3 +30,27 @@
     radius: 3
     energy: 2
     color: "#2789CD"
+
+- type: entity
+  id: ADTOFFDesktop
+  parent: BaseStructure
+  name: off desktop computer
+  description: Just a computer turned off, what else is there to say?
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: /Textures/ADT/Structures/Decoration/desktop.rsi
+    state: off_desktop
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]

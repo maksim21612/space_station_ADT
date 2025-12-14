@@ -1,0 +1,32 @@
+- type: constructionGraph
+  id: UraniumWindowDirectional
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: uraniumwindowdirectional
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+    - node: uraniumwindowdirectional
+      entity: UraniumWindowDirectional
+            
+- type: constructionGraph
+  id: UraniumReinforcedWindowDirectional
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: uraniumreinforcedwindowdirectional
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+
+    - node: uraniumreinforcedwindowdirectional
+      entity: UraniumReinforcedWindowDirectional

@@ -26,6 +26,9 @@
               max: 8
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
+  - type: Construction
+    graph: ADTBaseBarrel
+    node: adtbasebarrel
 
 - type: entity
   id: ADTBarrelPlanks
@@ -35,6 +38,9 @@
     noRot: true
     sprite: /Textures/ADT/Structures/Decoration/blackbarrel.rsi
     state: barrel_planks
+  - type: Construction
+    graph: ADTBarrelPlanks
+    node: adtbarrelplanks
     
 - type: entity
   id: ADTBarrelFire
@@ -56,3 +62,6 @@
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: AlwaysHot
+  - type: Construction
+    graph: ADTBarrelFire
+    node: adtbarrelfire

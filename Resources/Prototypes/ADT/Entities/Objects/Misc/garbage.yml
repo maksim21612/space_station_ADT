@@ -6,8 +6,15 @@
   components:
   - type: Sprite
     noRot: true
-    sprite: /Textures/ADT/Structures/Decoration/garbage.rsi
+    sprite: ADT/Objects/Misc/garbage.rsi
     state: garbage
+  - type: Tag
+    tags:
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 250
+      Steel: 250
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Wood

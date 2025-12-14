@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: ADTCandelabraLit
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: adtcandelabralit
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 5
+        
+    - node: adtcandelabralit
+      entity: ADTCandelabraLit

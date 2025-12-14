@@ -82,6 +82,15 @@ ent-ADTPsychoAirlock = шлюз
 ent-ADTCorporateAirlock = шлюз
     .desc = Он открывается, он закрывается, и он может вас раздавить.
     .suffix = Корпоративный
+ent-ADTSandAirlock = шлюз
+    .desc = Он открывается, он закрывается, и он может вас раздавить.
+    .suffix = Пляж
+ent-ADTAlwaysPoweredUraniumAirlock =  шлюз
+    .desc = Он открывается, он закрывается, и он может вас раздавить.
+    .suffix = Чревоугодие, Всегда запитан
+ent-ADTUraniumAirlock =  шлюз
+    .desc = Он открывается, он закрывается, и он может вас раздавить.
+    .suffix = Чревоугодие
 
 # стеклянные
 
@@ -151,4 +160,7 @@ ent-ADTGlassBlackCentcommAirlock = стеклянный шлюз
 ent-ADTGlassCorporateAirlock = стеклянный шлюз
     .desc = Он открывается, он закрывается, и он может вас раздавить.
     .suffix = Корпоративный
+ent-ADTGlassSandAirlock = стеклянный шлюз
+    .desc = Он открывается, он закрывается, и он может вас раздавить.
+    .suffix = Пляж
 
