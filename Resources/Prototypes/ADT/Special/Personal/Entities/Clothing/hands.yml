@@ -201,3 +201,18 @@
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-black
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesCombatOliver28
+  name: worn combat gloves
+  description: Their protective properties have deteriorated over time, but they still protect the wearer from electric shock just as well.
+  suffix: Sponsor, Oliver28, only for an engineer
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/combat.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
